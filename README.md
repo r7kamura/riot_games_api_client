@@ -20,7 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'riot_games_api_client'
+
+client = RiotGamesApiClient::Client.new(
+  api_key: 'RGAPI-12345678-90ab-cdef-1234-567890abcdef',
+  region: 'jp1',
+)
+
+response = client.get_summoner(summoner_name: 'summoner_name')
+summoner_id = response.body['id']
+
+response = client.get_champion_masteries(summoner_id: 'summoner_id')
+```
+
+### Supported endpoints
+
+- `RiotGamesApiClient::Client#get_champion_masteries(summoner_id:)`
+- `RiotGamesApiClient::Client#get_summoner(summoner_name:)`
 
 ## Development
 
