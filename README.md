@@ -1,6 +1,8 @@
 # RiotGamesApiClient
 
-Riot Games API client.
+Riot Games API client for Ruby.
+
+See https://developer.riotgames.com/ for more details about Riot Games API.
 
 ## Installation
 
