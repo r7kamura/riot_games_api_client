@@ -59,6 +59,7 @@ module RiotGamesApiClient
     end
 
     # @param [String] path
+    # @return [Faraday::Response]
     def get(path)
       faraday_connection.get(path)
     end
