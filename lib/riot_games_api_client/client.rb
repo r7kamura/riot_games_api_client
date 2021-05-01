@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'faraday'
 require 'faraday_middleware'
 
@@ -47,7 +48,7 @@ module RiotGamesApiClient
       ) do |connection|
         connection.response(
           :json,
-          content_type: /\bjson\b/
+          content_type: /\bjson\b/,
         )
       end
     end

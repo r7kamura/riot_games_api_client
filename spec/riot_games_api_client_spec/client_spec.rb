@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe RiotGamesApiClient::Client do
@@ -50,7 +52,7 @@ RSpec.describe RiotGamesApiClient::Client do
     let!(:stub) do
       stub_request(
         :get,
-        "https://jp1.api.riotgames.com/lol/summoner/v4/summoners/by-name/#{summoner_name}"
+        "https://jp1.api.riotgames.com/lol/summoner/v4/summoners/by-name/#{summoner_name}",
       ).with(
         headers: {
           'X-Riot-Token' => api_key
