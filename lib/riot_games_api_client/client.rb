@@ -32,6 +32,11 @@ module RiotGamesApiClient
       get("/lol/champion-mastery/v4/champion-masteries/by-summoner/#{summoner_id}")
     end
 
+    # @return [Faraday::Response]
+    def get_champion_rotations
+      get('/lol/platform/v3/champion-rotations')
+    end
+
     # @param [String] summoner_name
     # @return [Faraday::Response]
     def get_summoner(summoner_name:)
