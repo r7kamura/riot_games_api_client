@@ -34,10 +34,10 @@ client = RiotGamesApiClient::Client.new(
   region: 'jp1',
 )
 
-response = client.get_summoner(summoner_name: 'summoner_name')
+response = client.get_lol_summoner(summoner_name: 'summoner_name')
 summoner_id = response.body['id']
 
-response = client.get_champion_masteries(summoner_id: summoner_id)
+response = client.get_lol_champion_masteries(summoner_id: summoner_id)
 ```
 
 See [lib/riot_games_api_client/client.rb](lib/riot_games_api_client/client.rb) for more details.
