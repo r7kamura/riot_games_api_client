@@ -5,7 +5,21 @@ require 'faraday_middleware'
 module RiotGamesApiClient
   class Client
     # @param [String] api_key
-    # @param [String] region
+    # @param [String] region One of the following values:
+    #   - americas
+    #   - asia
+    #   - br1
+    #   - eun1
+    #   - europe
+    #   - euw1
+    #   - jp1
+    #   - kr
+    #   - la1
+    #   - la2
+    #   - na1
+    #   - oc1
+    #   - ru
+    #   - tr1
     def initialize(api_key:, region:)
       @api_key = api_key
       @region = region
