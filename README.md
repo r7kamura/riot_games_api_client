@@ -40,7 +40,4 @@ summoner_id = response.body['id']
 response = client.get_champion_masteries(summoner_id: summoner_id)
 ```
 
-### Supported endpoints
-
-- `RiotGamesApiClient::Client#get_champion_masteries(summoner_id:)`
-- `RiotGamesApiClient::Client#get_summoner(summoner_name:)`
+See [lib/riot_games_api_client/client.rb](lib/riot_games_api_client/client.rb) for more details.
